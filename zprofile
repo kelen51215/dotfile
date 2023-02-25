@@ -1,0 +1,2 @@
+export _JAVA_AWT_WM_NONREPARENTING=1
+#export LANG=zh_CN.UTF-8

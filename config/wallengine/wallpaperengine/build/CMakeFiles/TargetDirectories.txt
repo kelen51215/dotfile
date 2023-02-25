@@ -1,0 +1,3 @@
+/home/kelen/dotfile/script/linux-wallpaperengine/build/CMakeFiles/wallengine.dir
+/home/kelen/dotfile/script/linux-wallpaperengine/build/CMakeFiles/edit_cache.dir
+/home/kelen/dotfile/script/linux-wallpaperengine/build/CMakeFiles/rebuild_cache.dir

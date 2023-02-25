@@ -1,0 +1,89 @@
+{
+	"layer": "top",
+	"modules-left": ["river/tags", "tray"],
+	"modules-center": ["custom/clock"],
+	"modules-right": [ "network", "custom/cpu","custom/mem", "pulseaudio", "custom/mic","battery","backlight"],
+	
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon} {volume}%",
+		"format-muted": " {volume}%",
+		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"format-icons": {
+			"default": ["", "", ""]
+		}
+	},
+
+    "river/tags": {
+        "tag-labels":[
+			"",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+		],
+		"disable-click": false,
+		"num-tags": 7
+    },
+
+	"network": {
+		"tooltip": false,
+		//"format-wifi": "  {essid} {ipaddr}",
+        //"format-ethernet": " {ipaddr}",		
+		"format-wifi": "  {essid}",
+		"format-ethernet": ""
+	},
+	"backlight": {
+		"tooltip": false,
+		"format": " {}%",
+		"interval":1,
+        "on-click":"bash ~/.config/bin/pkill_bc",
+        "on-click-right":"killall swaybg",
+        "on-scroll-up": "light -A 1%",
+        "on-scroll-down": "light -U 1%"
+	},
+    "battery": {
+        "states": {
+            "good": 100,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon}  {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+	"tray":{
+		"icon-size":18,
+		"show-passive-items":true,
+		"spacing": 10
+	},
+    "custom/clock": {
+        "interval": 1,
+        "return-type": "string",
+        "exec": "~/.config/waybar/modules/datetime.sh",
+        "on-click": "~/.config/waybar/modules/calendar.sh prev",
+        "on-click-right": "~/.config/waybar/modules/calendar.sh next",
+        "on-click-middle": "~/.config/waybar/modules/calendar.sh curr",
+        "tooltip": false
+    },
+	"custom/cpu": {
+		"interval": 1,
+        "return-type": "string",
+        "exec": "~/.config/waybar/modules/cpu.sh",
+        "tooltip": false
+	},
+	"custom/mem": {
+		"interval": 1,
+        "return-type": "string",
+        "exec": "~/.config/waybar/modules/mem.sh",
+        "tooltip": false
+	}
+}
+
