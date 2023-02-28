@@ -105,3 +105,9 @@ export PATH="${PATH}:${CWPROOT}/bin"
 #
 # To customize prompt, run `p10k configure` or edit ~/dotfile/p10k.zsh.
 [[ ! -f ~/dotfile/p10k.zsh ]] || source ~/dotfile/p10k.zsh 2>/dev/null
+
+
+if [ -z "$DISPLAY" ]; then
+    export LANG=en_US.UTF-8
+    unset LANGUAGE
+fi
