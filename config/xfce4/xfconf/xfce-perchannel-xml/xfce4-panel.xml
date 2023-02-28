@@ -12,7 +12,7 @@
       <property name="icon-size" type="uint" value="16"/>
       <property name="size" type="uint" value="26"/>
       <property name="plugin-ids" type="array">
-        <value type="int" value="1"/>
+        <value type="int" value="7"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>
         <value type="int" value="4"/>
@@ -63,16 +63,14 @@
     <property name="plugin-12" type="string" value="clock">
       <property name="tooltip-format" type="string" value="%x"/>
       <property name="digital-format" type="string" value="%F %R"/>
+      <property name="digital-time-format" type="string" value="%F %R"/>
+      <property name="digital-layout" type="uint" value="3"/>
     </property>
     <property name="plugin-13" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-14" type="string" value="actions"/>
-    <property name="plugin-7" type="string" value="pulseaudio">
-      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="chromium.instance138038;firefox.instance1931"/>
-    </property>
     <property name="plugin-8" type="string" value="whiskermenu"/>
-    <property name="plugin-1" type="string" value="whiskermenu"/>
+    <property name="plugin-7" type="string" value="applicationsmenu"/>
   </property>
 </channel>
