@@ -1,3 +1,5 @@
 # dotfile
 
-dotfile of kelen 
+dotfile of kelen for GNOME/Hyprland
+
+sh ./install.sh 
