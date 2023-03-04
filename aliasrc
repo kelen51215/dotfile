@@ -18,7 +18,7 @@ alias bspwm='startx ~/dotfile/xinitrc/xinitrc.bspwm'
 alias dwm='startx ~/dotfile/xinitrc/xinitrc.dwm'
 
 # OBS from xwayland
-alias obs='QT_QPA_PLATFORM=xcb obs'
+#alias obs='QT_QPA_PLATFORM=xcb obs'
 # alacritty with wayland
 # alias alacritty='Exec=env WAYLAND_DISPLAY= alacritty'
 
