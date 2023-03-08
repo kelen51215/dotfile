@@ -1,9 +1,4 @@
 ls
-ls -la
-ls
-ls -la
-cd alacritty/alacritty
-ls
 cd ..
 ls
 cd ..
@@ -497,4 +492,9 @@ env QT_QPA_PLATFORM=xcb VirtualBox
 sudo env QT_QPA_PLATFORM=xcb VirtualBox
 env QT_QPA_PLATFORM=xcb virtualbox
 su
+exit
+-f .condarc 
+[[ -f ~/dotfile/p10k.zsh ]]
+echo $[[ -f ~/dotfile/p10k.zsh ]]
+echo $[ -f ~/dotfile/p10k.zsh ]
 exit

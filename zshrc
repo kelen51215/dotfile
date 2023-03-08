@@ -98,7 +98,11 @@ source /home/kelen/opt/miniconda3/etc/profile.d/conda.sh 2>/dev/null
 # Enable nnn plugins
 source ~/.config/nnn/plugin.sh 2>/dev/null
 
- # Enable madagascar
+# Restart gnome-remote-desktop.service
+source ~/dotfile/script/grdp.sh 2>/dev/null
+
+#
+# Enable madagascar
 source ~/opt/madagascar/rsf/share/madagascar/etc/env.sh 2>/dev/null
 export CWPROOT='/home/kelen/opt/seismicunix'
 export PATH="${PATH}:${CWPROOT}/bin"
